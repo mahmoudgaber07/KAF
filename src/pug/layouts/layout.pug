@@ -1,0 +1,38 @@
+include ../helpers/_mixins
+
+block pageDetails
+	- var pageTitle = 'title'
+	- var currentUrl = '/url'
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		//- To run web application in full-screen
+		meta(name='apple-mobile-web-app-capable' content='yes')
+		//- Status Bar Style (see Supported Meta Tags below for available values)
+		//- Has no effect unless you have the previous meta tag
+		meta(name='apple-mobile-web-app-status-bar-style' content='black')
+		//- for IE
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+
+		title()= 'Al-Tawfkiya | ' +  pageTitle
+		//- Recommended favicon format
+		link(rel="icon" type="image/png" href="../assets/images/logo.jpeg")
+		link(rel="stylesheet", href="../assets/libs/css/fontawsome.min.css")
+		link(rel="stylesheet", href="../assets/libs/css/bootstrap.min.css")
+		link(rel="stylesheet", href="../assets/libs/css/nice-select.css")
+		link(rel="stylesheet", href="../assets/libs/css/swiper-bundle.min.css")
+		link(rel="stylesheet", href="../assets/css/style.css")
+	body
+		include ./_loader
+		include ./_nav
+		block content
+		script(src="../assets/libs/js/jquery-3.7.0.min.js")
+		script(src="../assets/libs/js/fontawesome.min.js")
+		script(src="../assets/libs/js/bootstrap.bundle.min.js")
+		script(src="../assets/libs/js/jquery.lazy.min.js")
+		script(src="../assets/libs/js/jquery.lazy.plugins.min.js")
+		script(src="../assets/libs/js/swiper-bundle.min.js")
+		script(src="../assets/js/script.js")

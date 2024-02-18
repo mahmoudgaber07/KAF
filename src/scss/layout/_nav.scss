@@ -1,0 +1,145 @@
+nav{
+    background:$white;
+    .navbar-brand{
+        img{
+            height: 100px;
+        }
+    }
+    .navbar-nav{
+        flex-direction: row;
+        padding: 20px 0;
+        .dropdown-menu{
+            position: absolute;
+            right: 0;
+        }
+        li{
+            a{
+                color: $gray;
+                font-weight: bold;
+            &:hover{
+                color: $greenColor;
+            }
+            }
+            i{
+                font-size: 22px;
+            }
+        }
+    }
+    .nav-item{
+        padding: 0 10px;
+    }
+    .nice-select{
+        border: 0;
+        &::before{
+            content: url("../images/icons/globe-solid.svg");
+            padding: 0 5px;
+        }
+        &:after{
+            content: none;
+        }
+    }
+}
+.navbar-nav .nav-link.active {
+    color: $gray;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $greenColor;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+// .dropdown-menu{
+//     width: 1rem;
+// }
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-color: $greenColor;
+    padding: 0;
+}
+.dropdown-menu li:hover .dropdown-item{
+    background: $greenColor;
+    color: $white;
+    transition: all .5s ease-in;
+}
+.dropdown-menu .dropdown-item{
+    padding: 10px 15px;
+}
+
+.mobile-nav{
+    display:none;
+}
+@media (max-width: 992px) {
+    nav.main-nav{
+        display: none;
+    }
+    nav.mobile-nav{
+        display: block;
+    }
+ }

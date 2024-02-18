@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Al-Tawfkiya | homepage</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.jpeg">
+    <link rel="stylesheet" href="../assets/libs/css/fontawsome.min.css">
+    <link rel="stylesheet" href="../assets/libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <div class="loading"><span class="loader"></span></div>
+    <nav class="navbar main-nav navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid"><a class="navbar-brand px-2" href="#"><img class="img-fluid" src="../assets/images/main-logo2.svg" alt="logo" width="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item text-center"><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping px-1 d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-heart px-1 d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-bag-shopping px-1 d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" href="#"><i class="fa-regular fa-image d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" href="#"><i class="fa-solid fa-people-line px-1 d-block"></i><span>LINK</span></a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto pe-5 mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a class="nav-link position-relative" aria-current="page" href="#">
+                <i class="fa-solid fa-comment-dots"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1+</span></a></li>
+            <li class="nav-item"><a class="nav-link position-relative" href="#">
+                <i class="fa-solid fa-bell"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1+</span></a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle d-flex align-items-center" id="navbarDropdownMenuLink" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false"><img class="rounded-circle" src="../assets/images/avatar.webp" height="40" alt="Avatar" loading="lazy"></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">
+                    <div class="d-flex justify-content-around">
+                      <div class="avatar"><img class="rounded-circle" src="../assets/images/avatar.webp" height="40" alt="Avatar" loading="lazy"></div>
+                      <div class="text-name">
+                        <p class="d-inline-block m-0">Ahmed Ali</p>
+                        <p class="text-muted mx-auto m-0">Student</p>
+                      </div>
+                    </div></a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user px-1"></i> My Profile</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="d-flex justify-content-between">
+                      <div class="dark">
+                        <label class="form-check-label" for="darkmode">
+                           <i class="fa-solid fa-moon px-1"></i>Dark Mode</label>
+                      </div>
+                      <div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="darkmode"></div>
+                    </div></a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language px-1"></i> Language</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear px-1"></i> Account Settings</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket px-1"></i> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobile-nav navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid"><a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/images/main-logo2.svg" alt="logo" width="100"></a>
+        <ul class="navbar-nav ms-auto pe-5 mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link position-relative" aria-current="page" href="#">
+              <i class="fa-solid fa-comment-dots"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1+</span></a></li>
+          <li class="nav-item"><a class="nav-link position-relative" href="#">
+              <i class="fa-solid fa-bell"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1+</span></a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle d-flex align-items-center" id="navbarDropdownMenuLink" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false"><img class="rounded-circle" src="../assets/images/avatar.webp" height="40" alt="Avatar" loading="lazy"></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-conent-around">
+                    <div class="avatar"><img class="rounded-circle" src="../assets/images/avatar.webp" height="40" alt="Avatar" loading="lazy"></div>
+                    <div class="text-name">
+                      <p class="d-inline-block m-0">Ahmed Ali</p>
+                      <p class="text-muted m-auto">Student</p>
+                    </div>
+                  </div></a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user px-1"></i> My Profile</a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <div class="dark">
+                      <label class="form-check-label" for="darkmode">
+                         <i class="fa-solid fa-moon px-1"></i>Dark Mode</label>
+                    </div>
+                    <div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="darkmode"></div>
+                  </div></a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language px-1"></i> Language</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear px-1"></i> Account Settings</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket px-1"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-center">
+            <li class="nav-item text-center"><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping px-1 d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-heart px-1 d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-bag-shopping px-1 d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" href="#"><i class="fa-regular fa-image d-block"></i><span>LINK</span></a></li>
+            <li class="nav-item text-center"><a class="nav-link" href="#"><i class="fa-solid fa-people-line px-1 d-block"></i><span>LINK</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container"> 
+      <div class="row justify-content-between mt-3">
+        <div class="col-12 col-md-7">
+          <div class="container p-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-md-row">
+              <li class="nav-item"><a class="nav-link px-2" href="#">Design <span class="px-2 d-none d-md-inline"> / </span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Logo Design</a></li>
+            </ul>
+            <p class="text-muted px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed magnam laborum rerum animi facilis fugit nisi cumque expedita quae qui ea quasi consectetur consequatur sapiente eligendi labore, nemo eveniet.</p>
+            <div class="row m-0">
+              <div class="col-12 col-md-8">
+                <div class="d-flex stars py-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(4.2)</span></div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="d-flex stars py-3 justify-content-end"><i class="fa-solid fa-share-nodes px-3"></i><i class="fa-solid fa-heart"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/slider/4.jpg" alt="slider"></div>
+              <div class="swiper-slide"><img src="../assets/images/slider/4.jpg" alt="slider"></div>
+              <div class="swiper-slide"><img src="../assets/images/slider/4.jpg" alt="slider"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="container py-3">
+            <h3 class="py-3">Description</h3>
+            <div class="desciption bg-light p-2">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nemo atque debitis esse delectus beatae voluptas. Vero laborum voluptates ducimus incidunt deleniti sit, tempora, maiores, iste sed facilis officia odio.</p>
+            </div>
+          </div>
+          <div class="container services">
+            <div class="row align-items-baseline">
+              <div class="col-12 col-md-8">
+                <h3 class="py-3">Services-Add-Ons</h3>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-check">
+<input class="form-check-input" type="checkbox" name="exampleRadios" id="sellectAll" value="option2">
+<label class="form-check-label px-2" for="sellectAll">Select-All</label>
+</div>
+              </div>
+              <div class="col-12">
+                <div class="card shadow my-2">
+                  <div class="card-body bg-light">
+                    <div class="form-check">
+<input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+<label class="form-check-label px-2" for="exampleRadios1">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit iste sequi aperiam vero.</label>
+<div class="my-3">
+<span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+<span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+</div>
+</div>
+                  </div>
+                </div>
+                <div class="card shadow my-2">
+                  <div class="card-body bg-light">
+                    <div class="form-check">
+<input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+<label class="form-check-label px-2" for="exampleRadios2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita dolore vel facilis pariatur!</label>
+<div class="my-3">
+<span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+<span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+</div>
+</div>
+                  </div>
+                </div>
+                <div class="card shadow my-2">
+                  <div class="card-body bg-light">
+                    <div class="form-check">
+<input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
+<label class="form-check-label px-2" for="exampleRadios3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita dolore vel facilis pariatur!</label>
+<div class="my-3">
+<span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+<span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+</div>
+</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h3 class="py-3">Purchase Service </h3>
+                <div class="card shadow">
+                  <div class="card-body"><div class="quantity js-quantity-1 my-3 d-inline-block">
+<a class="btn js-minus">
+<i class="fa-solid fa-minus"></i>
+</a>
+<input class="number js-number" type="text" name="quantity" value="1" readonly="">
+<a class="btn js-plus">
+<i class="fa-solid fa-plus"></i>
+</a>
+<input class="px-5 py-1 bg-light js-total" value="300" readonly=""/>
+</div><button class="btn btn-success px-4 py-1">Purchase</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h3 class="py-3"> <i class="fa-solid fa-star rating-color"> </i>4.6 Service Rating .46 Ratings</h3>
+                <div class="row align-items-center m-0">
+<div class="card p-3 shadow">
+<div class="mt-1 d-flex justify-content-between align-items-center">
+<h5 class="review-count">Reviews<i class="fa-solid fa-star rating-color px-2"></i>5.0</h5>
+<div class="ratings">
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+<div class="progress-bar bg-warning" style="width: 75%"></div>
+</div>
+<span class="px-2">5</span>
+</div>
+<div class="mt-1 d-flex justify-content-between align-items-center">
+<h5 class="review-stat">Reviews<i class="fa-solid fa-star rating-color px-2"></i>5.0</h5>
+<div class="small-ratings">
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+<div class="progress-bar bg-warning" style="width: 75%"></div>
+</div>
+<span class="px-2">5</span>
+</div>
+<div class="mt-1 d-flex justify-content-between align-items-center">
+<h5 class="review-stat">Reviews<i class="fa-solid fa-star rating-color px-2"></i>5.0</h5>
+<div class="small-ratings">
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star rating-color"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+<div class="progress-bar bg-warning" style="width: 75%"></div>
+</div>
+<span class="px-2">5</span>
+</div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center my-3">
+            <div class="comments col-md-12">
+              <div class="card shadow">
+                <div class="mt-2">
+                  <div class="d-flex flex-row p-3"><img class="rounded-circle me-3" src="../assets/images/avatar.webp" width="40" height="40">
+                    <div class="w-100">
+                      <div class="d-flex flex-row align-items-center"><span class="mr-2">Brian selter</span></div>
+                      <div class="d-flex flex-row align-items-center"><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><small class="px-2">30 min</small></div>
+                      <p class="text-justify comment-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row p-3"><img class="rounded-circle me-3" src="../assets/images/avatar.webp" width="40" height="40">
+                    <div class="w-100">
+                      <div class="d-flex flex-row align-items-center"><span class="mr-2">Brian selter</span></div>
+                      <div class="d-flex flex-row align-items-center"><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><small class="px-2">30 min</small></div>
+                      <p class="text-justify comment-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row p-3"><img class="rounded-circle me-3" src="../assets/images/avatar.webp" width="40" height="40">
+                    <div class="w-100">
+                      <div class="d-flex flex-row align-items-center"><span class="mr-2">Brian selter</span></div>
+                      <div class="d-flex flex-row align-items-center"><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><i class="fa-solid fa-star rating-color mr-2"></i><small class="px-2">30 min</small></div>
+                      <p class="text-justify comment-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 d-flex flex-row align-items-center p-3 form-color"><img class="rounded-circle me-2" src="../assets/images/avatar.webp" width="50">
+                  <textarea class="form-control" type="text" placeholder="Enter your comment..."></textarea>
+                </div>
+                <div class="my-2">
+                  <button class="btn btn-success px-5 py-1"> Post Review</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4"> 
+          <div class="container">
+            <div class="card bg-light p-3 my-2 shadow">
+              <h3 class="py-3">Info</h3>
+              <div class="d-flex justify-content-evenly">
+                <div class="d-inline-flex"><i class="fa-solid fa-dollar-sign px-2"></i>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="price">100$</div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div class="d-inline-flex"><i class="fa-solid fa-clock px-2"></i>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="price">100$</div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div class="d-inline-flex"><i class="fa-solid fa-people-group px-2"></i>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="price">100$</div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div class="d-inline-flex"><i class="fa-solid fa-briefcase px-2"></i>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="price">100$</div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div class="d-inline-flex"><i class="fa-solid fa-list px-2"></i>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="price">100$</div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div class="d-inline-flex"><i class="fa-solid fa-list px-2"></i>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="price">100$</div>
+              </div>
+            </div>
+            <div class="card bg-light p-3 my-2 shadow">
+              <h3 class="py-3">Share & Earn</h3><div class="social-icon mb-4">
+<a class="social-linkedin btn  m-1" href="#" role="button"><i class="fab fa-linkedin-in"></i></a>
+<a class="social-facebook btn  m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+<a class="social-whatsapp btn  m-1" href="#" role="button"><i class="fab fa-whatsapp"></i></a>
+<a class="social-twitter btn  m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
+<a class="social-copy btn  m-1" href="#" role="button"><i class="fa-solid fa-copy"></i></a>
+</div>
+            </div>
+          </div>
+          <div class="container bg-light py-2 shadow">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h4 class="py-4">Seller Other Services</h4><a href="#">See More</a>
+            </div>
+            <div class="card my-3 shadow-sm">
+              <div class="image-container d-flex">
+                <div class="first"><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+                <div class="product-detail-container p-2">
+                  <h5 class="dress-name">White traditional long dress</h5>
+                  <div class="d-flex pt-1 justify-content-between">
+                    <div class="d-flex align-items-baseline"><i class="fa-solid fa-star rating-color px-2"></i>
+                      <p class="text-muted">4.7</p>
+                    </div>
+                    <div class="d-flex align-items-baseline"><i class="fa-solid fa-cart-shopping px-2"></i>
+                      <p class="text-muted">55</p>
+                    </div>
+                    <div class="px-2"><a href=""> <i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3 shadow-sm">
+              <div class="image-container d-flex">
+                <div class="first"><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+                <div class="product-detail-container p-2">
+                  <h5 class="dress-name">White traditional long dress</h5>
+                  <div class="d-flex pt-1 justify-content-between">
+                    <div class="d-flex align-items-baseline"><i class="fa-solid fa-star rating-color px-2"></i>
+                      <p class="text-muted">4.7</p>
+                    </div>
+                    <div class="d-flex align-items-baseline"><i class="fa-solid fa-cart-shopping px-2"></i>
+                      <p class="text-muted">55</p>
+                    </div>
+                    <div class="px-2"><a href=""> <i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3 shadow-sm">
+              <div class="image-container d-flex">
+                <div class="first"><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+                <div class="product-detail-container p-2">
+                  <h5 class="dress-name">White traditional long dress</h5>
+                  <div class="d-flex pt-1 justify-content-between">
+                    <div class="d-flex align-items-baseline"><i class="fa-solid fa-star rating-color px-2"></i>
+                      <p class="text-muted">4.7</p>
+                    </div>
+                    <div class="d-flex align-items-baseline"><i class="fa-solid fa-cart-shopping px-2"></i>
+                      <p class="text-muted">55</p>
+                    </div>
+                    <div class="px-2"><a href=""> <i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12"> 
+          <div class="row py-5 m-0 justify-content-evenly justify-md-content-between">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h3 class="py-4">Suggest Services</h3><a href="#">See More</a>
+            </div>
+            <div class="card shadow my-2" style="width:16rem;">
+              <div class="image-container">
+                <div class="first position-relative"><a class="wishlist position-absolute bg-light p-2 rounded-circle" href="#"><i class="fa-regular fa-heart"></i></a><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+              </div>
+              <div class="product-detail-container p-2">
+                <h5 class="dress-name">White traditional long dress</h5>
+                <div class="d-flex align-items-center pt-1">
+                  <div class="color-select d-flex"><i class="fa-solid fa-star rating-color"> </i>
+                    <p class="text-muted">4.7</p>
+                  </div>
+                  <div class="d-flex"><i class="fa-solid fa-cart-shopping px-2"></i>
+                    <p class="text-muted">55</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-baseline pt-1">
+                  <div><img class="img-fluid rounded-circle me-2" src="../assets/images/avatar.webp" alt="avtar" width="50"></div>
+                  <div class="buy d-flex"><i class="fa-solid fa-tag px-2"></i>
+                    <p class="text-muted">10$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow my-2" style="width:16rem;">
+              <div class="image-container">
+                <div class="first position-relative"><a class="wishlist position-absolute bg-light p-2 rounded-circle" href="#"><i class="fa-regular fa-heart"></i></a><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+              </div>
+              <div class="product-detail-container p-2">
+                <h5 class="dress-name">White traditional long dress</h5>
+                <div class="d-flex align-items-center pt-1">
+                  <div class="color-select d-flex"><i class="fa-solid fa-star rating-color"> </i>
+                    <p class="text-muted">4.7</p>
+                  </div>
+                  <div class="d-flex"><i class="fa-solid fa-cart-shopping px-2"></i>
+                    <p class="text-muted">55</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-baseline pt-1">
+                  <div><img class="img-fluid rounded-circle me-2" src="../assets/images/avatar.webp" alt="avtar" width="50"></div>
+                  <div class="buy d-flex"><i class="fa-solid fa-tag px-2"></i>
+                    <p class="text-muted">10$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow my-2" style="width:16rem;">
+              <div class="image-container">
+                <div class="first position-relative"><a class="wishlist position-absolute bg-light p-2 rounded-circle" href="#"><i class="fa-regular fa-heart"></i></a><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+              </div>
+              <div class="product-detail-container p-2">
+                <h5 class="dress-name">White traditional long dress</h5>
+                <div class="d-flex align-items-center pt-1">
+                  <div class="color-select d-flex"><i class="fa-solid fa-star rating-color"> </i>
+                    <p class="text-muted">4.7</p>
+                  </div>
+                  <div class="d-flex"><i class="fa-solid fa-cart-shopping px-2"></i>
+                    <p class="text-muted">55</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-baseline pt-1">
+                  <div><img class="img-fluid rounded-circle me-2" src="../assets/images/avatar.webp" alt="avtar" width="50"></div>
+                  <div class="buy d-flex"><i class="fa-solid fa-tag px-2"></i>
+                    <p class="text-muted">10$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow my-2" style="width:16rem;">
+              <div class="image-container">
+                <div class="first position-relative"><a class="wishlist position-absolute bg-light p-2 rounded-circle" href="#"><i class="fa-regular fa-heart"></i></a><img class="img-fluid rounded thumbnail-image" src="../assets/images/certficate.jpeg"></div>
+              </div>
+              <div class="product-detail-container p-2">
+                <h5 class="dress-name">White traditional long dress</h5>
+                <div class="d-flex align-items-center pt-1">
+                  <div class="color-select d-flex"><i class="fa-solid fa-star rating-color"> </i>
+                    <p class="text-muted">4.7</p>
+                  </div>
+                  <div class="d-flex"><i class="fa-solid fa-cart-shopping px-2"></i>
+                    <p class="text-muted">55</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-baseline pt-1">
+                  <div><img class="img-fluid rounded-circle me-2" src="../assets/images/avatar.webp" alt="avtar" width="50"></div>
+                  <div class="buy d-flex"><i class="fa-solid fa-tag px-2"></i>
+                    <p class="text-muted">10$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/libs/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/libs/js/fontawesome.min.js"></script>
+    <script src="../assets/libs/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/js/jquery.lazy.min.js"></script>
+    <script src="../assets/libs/js/jquery.lazy.plugins.min.js"></script>
+    <script src="../assets/libs/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

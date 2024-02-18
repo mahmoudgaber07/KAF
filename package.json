@@ -1,0 +1,12 @@
+{
+    "name": "template",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "node-sass": "^9.0.0",
+        "pug": "^3.0.2"
+    },
+    "scripts": {
+        "start": "sass -w src/scss/core.scss dist/assets/css/style.css & pug -w -P src/pug/pages -o dist/html/"
+    }
+}

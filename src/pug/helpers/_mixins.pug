@@ -1,0 +1,26 @@
+mixin stars(n)
+    .d-flex.stars.py-3
+        i.fa-solid.fa-star
+        i.fa-solid.fa-star
+        i.fa-solid.fa-star
+        i.fa-solid.fa-star
+        i.fa-solid.fa-star
+        span #{n}
+
+mixin icons
+    .d-flex.stars.py-3.justify-content-end
+        i.fa-solid.fa-share-nodes.px-3
+        i.fa-solid.fa-heart
+
+mixin quan
+    <div class="quantity js-quantity-1 my-3 d-inline-block">
+        <a class="btn js-minus">
+            <i class="fa-solid fa-minus"></i>
+        </a>
+        <input class="number js-number" type="text" name="quantity" value="1" readonly="">
+        <a class="btn js-plus">
+            <i class="fa-solid fa-plus"></i>
+        </a>
+        <input class="px-5 py-1 bg-light js-total" value="300" readonly=""/>
+    </div>
+

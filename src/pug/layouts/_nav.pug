@@ -1,0 +1,157 @@
+nav.navbar.main-nav.navbar-expand-lg.bg-body-tertiary
+    .container-fluid
+        a.navbar-brand.px-2(href="#")
+            img.img-fluid(src="../assets/images/main-logo2.svg", alt="logo",width="100")
+        button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.m-auto.mb-2.mb-lg-0
+                li.nav-item.text-center
+                    a.nav-link.active(aria-current="page", href="#")
+                        <i class="fa-solid fa-cart-shopping px-1 d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(aria-current="page", href="#")
+                        <i class="fa-solid fa-heart px-1 d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(aria-current="page", href="#")
+                        <i class="fa-solid fa-bag-shopping px-1 d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(href="#")
+                        <i class="fa-regular fa-image d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(href="#")
+                        <i class="fa-solid fa-people-line px-1 d-block"></i>
+                        span LINK
+            ul.navbar-nav.ms-auto.pe-5.mb-2.mb-lg-0.align-items-center
+                li.nav-item
+                    a.nav-link.position-relative(aria-current="page", href="#") <i class="fa-solid fa-comment-dots"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            |1+
+                        </span>
+                li.nav-item
+                    a.nav-link.position-relative(href="#") <i class="fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            |1+
+                        </span>
+                li.nav-item.dropdown
+                    a#navbarDropdownMenuLink.nav-link.dropdown-toggle.d-flex.align-items-center(href='#' role='button' data-mdb-toggle='dropdown' aria-expanded='false')
+                        img.rounded-circle(src='../assets/images/avatar.webp' height='40' alt='Avatar' loading='lazy')
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                        li
+                            a.dropdown-item(href='#')
+                                .d-flex.justify-content-around
+                                    .avatar
+                                        img.rounded-circle(src='../assets/images/avatar.webp' height='40' alt='Avatar' loading='lazy') 
+                                    .text-name
+                                        p.d-inline-block.m-0 Ahmed Ali
+                                        p.text-muted.mx-auto.m-0 Student
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-user px-1"></i> My Profile
+                        li
+                            a.dropdown-item(href='#')
+                                //- <div class="form-check form-switch">
+                                //-     <label class="form-check-label" for="flexSwitchCheckDefault">
+                                //-         <i class="fa-solid fa-moon px-1"></i> Dark Mode
+                                //-     </label>
+                                //-     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                //- </div>
+                                .d-flex.justify-content-between
+                                    .dark
+                                        label.form-check-label(for="darkmode") 
+                                            <i class="fa-solid fa-moon px-1"></i>
+                                            | Dark Mode
+                                    .form-check.form-switch
+                                        <input class="form-check-input" type="checkbox" role="switch" id="darkmode">
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-language px-1"></i> Language
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-gear px-1"></i> Account Settings
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-right-from-bracket px-1"></i> Logout
+                //- li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false").
+                        Dropdown
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="#") Action
+                        li
+                            a.dropdown-item(href="#") Another action
+                        li
+                            hr.dropdown-divider
+                        li
+                            a.dropdown-item(href="#") Something else here
+                        li.nav-item
+                            a.nav-link.disabled(aria-disabled="true") Disabled
+
+nav.mobile-nav.navbar.navbar-expand-lg.bg-body-tertiary
+    .container-fluid
+        a.navbar-brand(href="#")
+            img.img-fluid(src="../assets/images/main-logo2.svg", alt="logo",width="100")
+        ul.navbar-nav.ms-auto.pe-5.mb-2.mb-lg-0.align-items-center
+                li.nav-item
+                    a.nav-link.position-relative(aria-current="page", href="#") <i class="fa-solid fa-comment-dots"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            |1+
+                        </span>
+                li.nav-item
+                    a.nav-link.position-relative(href="#") <i class="fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            |1+
+                        </span>
+                li.nav-item.dropdown
+                    a#navbarDropdownMenuLink.nav-link.dropdown-toggle.d-flex.align-items-center(href='#' role='button' data-mdb-toggle='dropdown' aria-expanded='false')
+                        img.rounded-circle(src='../assets/images/avatar.webp' height='40' alt='Avatar' loading='lazy')
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                        li
+                            a.dropdown-item(href='#')
+                                .d-flex.justify-conent-around
+                                    .avatar
+                                        img.rounded-circle(src='../assets/images/avatar.webp' height='40' alt='Avatar' loading='lazy') 
+                                    .text-name
+                                        p.d-inline-block.m-0 Ahmed Ali
+                                        p.text-muted.m-auto Student
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-user px-1"></i> My Profile
+                        li
+                            a.dropdown-item(href='#')
+                                .d-flex.justify-content-between
+                                    .dark
+                                        label.form-check-label(for="darkmode") 
+                                            <i class="fa-solid fa-moon px-1"></i>
+                                            | Dark Mode
+                                    .form-check.form-switch
+                                        <input class="form-check-input" type="checkbox" role="switch" id="darkmode">
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-language px-1"></i> Language
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-gear px-1"></i> Account Settings
+                        li
+                            a.dropdown-item(href='#') <i class="fa-solid fa-right-from-bracket px-1"></i> Logout
+        button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.m-auto.mb-2.mb-lg-0.justify-content-center
+                li.nav-item.text-center
+                    a.nav-link.active(aria-current="page", href="#")
+                        <i class="fa-solid fa-cart-shopping px-1 d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(aria-current="page", href="#")
+                        <i class="fa-solid fa-heart px-1 d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(aria-current="page", href="#")
+                        <i class="fa-solid fa-bag-shopping px-1 d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(href="#")
+                        <i class="fa-regular fa-image d-block"></i>
+                        span LINK
+                li.nav-item.text-center
+                    a.nav-link(href="#")
+                        <i class="fa-solid fa-people-line px-1 d-block"></i>
+                        span LINK

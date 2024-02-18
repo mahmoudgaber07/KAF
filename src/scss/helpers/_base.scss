@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 50px 0;
+}
+.row>*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: $dark;
+}
+.card{
+    border: 0;
+}
+.stars i {
+    color: rgb(243, 156, 18);
+    font-size: 1.5rem;
+}
+.services{
+    .form-check-input[type=checkbox]{
+        border-radius: 50%;
+        width:  20px;
+        height: 20px;
+    }
+}
+.comments{
+    textarea{
+        height: 150px;
+    }
+}
+.number,.js-total{
+    width: 150px;
+    border: 0;
+    text-align: center;
+}
+.js-minus,.js-plus{
+    border-radius: 50%;
+    background-color: $lightgreen;
+}
+.rating-color{
+    color:#fbc634 !important;
+}
+.progress{
+    width: 200px;
+}
+
+$sociallist: facebook twitter whatsapp copy;
+
+@each $social,$color,$hover in 
+(facebook,#1877f2,gray)
+(twitter,#1da1f2,gray)
+(whatsapp,#25d165,gray)
+(linkedin,#2867b2,gray)
+(copy,gray,gray)
+{
+    .social-#{$social}{
+        color:$white;
+        background: $color;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            background-color: transparent;
+            color: $hover;
+        }
+    }
+}

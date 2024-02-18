@@ -1,0 +1,21 @@
+extends ../layouts/layout
+
+block pageDetails 
+    - var pageTitle = 'homepage'
+    - var currentUrl = '/'
+
+block content
+    .container 
+        .row.justify-content-between.mt-3
+            .col-12.col-md-7
+                include ../component/_header.pug
+                include ../component/_slider.pug
+                include ../component/_description.pug
+                include ../component/_services.pug
+                include ../component/_comments.pug
+            .col-12.col-md-4 
+                include ../component/_info.pug
+                include ../component/_smallCardServices.pug
+            .col-12 
+                include ../component/_suggestServices.pug
+

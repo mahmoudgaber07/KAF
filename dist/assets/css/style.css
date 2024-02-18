@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.row > * {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card {
+  border: 0;
+}
+
+.stars i {
+  color: rgb(243, 156, 18);
+  font-size: 1.5rem;
+}
+
+.services .form-check-input[type=checkbox] {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.comments textarea {
+  height: 150px;
+}
+
+.number, .js-total {
+  width: 150px;
+  border: 0;
+  text-align: center;
+}
+
+.js-minus, .js-plus {
+  border-radius: 50%;
+  background-color: #e9f9f1;
+}
+
+.rating-color {
+  color: #fbc634 !important;
+}
+
+.progress {
+  width: 200px;
+}
+
+.social-facebook {
+  color: #FFF;
+  background: #1877f2;
+}
+.social-facebook:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: transparent;
+  color: gray;
+}
+
+.social-twitter {
+  color: #FFF;
+  background: #1da1f2;
+}
+.social-twitter:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: transparent;
+  color: gray;
+}
+
+.social-whatsapp {
+  color: #FFF;
+  background: #25d165;
+}
+.social-whatsapp:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: transparent;
+  color: gray;
+}
+
+.social-linkedin {
+  color: #FFF;
+  background: #2867b2;
+}
+.social-linkedin:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: transparent;
+  color: gray;
+}
+
+.social-copy {
+  color: #FFF;
+  background: gray;
+}
+.social-copy:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: transparent;
+  color: gray;
+}
+
+nav {
+  background: #FFF;
+}
+nav .navbar-brand img {
+  height: 100px;
+}
+nav .navbar-nav {
+  flex-direction: row;
+  padding: 20px 0;
+}
+nav .navbar-nav .dropdown-menu {
+  position: absolute;
+  right: 0;
+}
+nav .navbar-nav li a {
+  color: #696f79;
+  font-weight: bold;
+}
+nav .navbar-nav li a:hover {
+  color: #1dbf73;
+}
+nav .navbar-nav li i {
+  font-size: 22px;
+}
+nav .nav-item {
+  padding: 0 10px;
+}
+nav .nice-select {
+  border: 0;
+}
+nav .nice-select::before {
+  content: url("../images/icons/globe-solid.svg");
+  padding: 0 5px;
+}
+nav .nice-select:after {
+  content: none;
+}
+
+.navbar-nav .nav-link.active {
+  color: #696f79;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #1dbf73;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  border-color: #1dbf73;
+  padding: 0;
+}
+
+.dropdown-menu li:hover .dropdown-item {
+  background: #1dbf73;
+  color: #FFF;
+  transition: all 0.5s ease-in;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  nav.main-nav {
+    display: none;
+  }
+  nav.mobile-nav {
+    display: block;
+  }
+}
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #e9f9f1;
+  z-index: 9;
+}
+
+.loader {
+  width: 64px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: split 1s ease-in infinite alternate;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translateX(-10px);
+  background: #1dbf73;
+  opacity: 0.75;
+  backdrop-filter: blur(20px);
+}
+
+.loader::after {
+  left: auto;
+  right: 0;
+  background: #696f79;
+  transform: translateX(10px);
+}
+
+@keyframes split {
+  0%, 25% {
+    width: 64px;
+  }
+  100% {
+    width: 148px;
+  }
+}
+.slider {
+  width: 100%;
+  height: 400px;
+}
+.slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .swiper-button-next {
+  right: -15px;
+}
+.slider .swiper-button-next::after {
+  font-size: 20px;
+}
+.slider .swiper-button-prev {
+  left: -15px;
+}
+.slider .swiper-button-prev::after {
+  font-size: 20px;
+}
+.slider .swiper-button-next, .slider .swiper-button-prev {
+  color: #1dbf73;
+  padding: 25px;
+  background: #e9f9f1;
+  border-radius: 50%;
+}
+.slider .swiper-pagination-bullet {
+  background: #1dbf73;
+}
+
+/*# sourceMappingURL=style.css.map */

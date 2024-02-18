@@ -1,0 +1,59 @@
+.container.services
+    .row.align-items-baseline
+        .col-12.col-md-8
+            h3.py-3 Services-Add-Ons
+        .col-12.col-md-4
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="exampleRadios" id="sellectAll" value="option2">
+                <label class="form-check-label px-2" for="sellectAll">
+                    | Select-All
+                </label>
+            </div>
+        .col-12
+            .card.shadow.my-2
+                .card-body.bg-light
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label px-2" for="exampleRadios1">
+                            |   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit iste sequi aperiam vero.
+                        </label>
+                        <div class="my-3">
+                            <span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+                            <span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+                        </div>
+                    </div>
+            .card.shadow.my-2
+                .card-body.bg-light
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label px-2" for="exampleRadios2">
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita dolore vel facilis pariatur!
+                        </label>
+                        <div class="my-3">
+                            <span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+                            <span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+                        </div>
+                    </div>
+            .card.shadow.my-2
+                .card-body.bg-light
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label px-2" for="exampleRadios3">
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita dolore vel facilis pariatur!
+                        </label>
+                        <div class="my-3">
+                            <span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+                            <span class="text-success rounded p-2" style="background:#e9f9f1;">$100</span>
+                        </div>
+                    </div>
+        .col-12
+            h3.py-3 Purchase Service 
+            .card.shadow
+                .card-body
+                    +quan
+                    <button class="btn btn-success px-4 py-1">Purchase</button>
+        .col-12
+            h3.py-3 
+                i.fa-solid.fa-star.rating-color 
+                | 4.6 Service Rating .46 Ratings
+            include ../component/_ratingService.pug
